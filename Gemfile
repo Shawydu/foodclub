@@ -32,6 +32,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Unicorn as the app server
 # gem 'unicorn'
 
+# Use will_paginate to perform pagination
+gem 'will_paginate', '~> 3.0.6'
+
+# Use simple_form to create form fields
+gem 'simple_form'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
