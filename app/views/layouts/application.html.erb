@@ -17,23 +17,40 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a href="#" class="navbar-brand">FoodClub</a>
+				<%= link_to 'FoodClub', root_path, :class => 'navbar-brand' %>
 			</div>
 
 			<div class="collaspe navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li><a href="#">Link</a></li>
+					<li>
+						<%= link_to new_place_path do %>
+							<i class="glyphicon glyphicon-plus-sign"></i>
+							New Place
+						<% end %>
+					</li>
 		          </ul>
 		        </li>
 				</ul>
 				
 		        <ul class="nav navbar-nav navbar-right">
-		          <li><a href="#">Link</a></li>
+		        	<% if user_signed_in? %>
+		            	<li><%= link_to 'Sign out', destroy_user_session_path, :method => :delete %></li>
+		            <% else %>
+		            	<li><%= link_to 'Login', new_user_session_path %></li>
+		            	<li><%= link_to 'Register', new_user_registration_path %></li>
+		            <% end %>
+		            <li><a href="#">Link</a></li>
 		        </ul>
 			</div>
 		</div>
 	</nav>
 
+<% if notice.present? %>
+	<p class="notice alert-info"><%= notice %></p>
+<% end %>
+<% if alert.present? %>
+	<p class="alert alert-danger"><%= alert %></p>
+<% end %>
 <%= yield %>
 
 </body>

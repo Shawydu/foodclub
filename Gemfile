@@ -37,6 +37,9 @@ gem 'will_paginate', '~> 3.0.6'
 
 # Use simple_form to create form fields
 gem 'simple_form'
+
+# Use devise for user authentication
+gem 'devise'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
