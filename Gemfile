@@ -40,6 +40,9 @@ gem 'simple_form'
 
 # Use devise for user authentication
 gem 'devise'
+
+# Use geocoder to display long&lat of address
+gem 'geocoder'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
