@@ -43,6 +43,9 @@ gem 'devise'
 
 # Use geocoder to display long&lat of address
 gem 'geocoder'
+
+# Use carrierwave to implement image upload feature
+gem 'carrierwave'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
