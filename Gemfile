@@ -46,6 +46,9 @@ gem 'geocoder'
 
 # Use carrierwave to implement image upload feature
 gem 'carrierwave'
+
+# Use figaro to inteprete application.yml
+gem 'figaro'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
