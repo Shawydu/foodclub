@@ -1,6 +1,6 @@
 class Place < ActiveRecord::Base
 	belongs_to :user
-	has_many :comments
+	has_many :comments, dependent: :destroy
 	has_many :photos
 	
 	validates :name, :presence => { :message => "How can people know it without Name" }, :length => { :minimum => 3}

@@ -46,11 +46,15 @@ gem 'geocoder'
 
 # Use carrierwave to implement image upload feature
 gem 'carrierwave'
+gem 'mini_magick'
 
 # Use figaro to inteprete application.yml
 gem 'figaro'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+# rails console
+gem 'pry-rails', :group => :development
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
