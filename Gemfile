@@ -42,7 +42,7 @@ gem 'simple_form'
 gem 'devise'
 
 # Use geocoder to display long&lat of address
-gem 'geocoder'
+gem 'geocoder', '1.3.4'
 
 # Use carrierwave to implement image upload feature
 gem 'carrierwave'
