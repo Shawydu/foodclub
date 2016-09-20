@@ -39,7 +39,7 @@ gem 'will_paginate', '~> 3.0.6'
 gem 'simple_form'
 
 # Use devise for user authentication
-gem 'devise'
+gem 'devise', '3.5.6'
 
 # Use geocoder to display long&lat of address
 gem 'geocoder', '1.3.4'
